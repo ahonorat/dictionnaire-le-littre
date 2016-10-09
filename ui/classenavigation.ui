@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fenetreNavigation</class>
+ <widget class="QDialog" name="fenetreNavigation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>371</width>
+    <height>185</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>DejaVu Serif</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Navigation</string>
+  </property>
+  <widget class="QPushButton" name="boutonAnnuler">
+   <property name="geometry">
+    <rect>
+     <x>101</x>
+     <y>138</y>
+     <width>121</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Annuler</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icones/X.png</normaloff>:/icones/X.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonConsulter">
+   <property name="geometry">
+    <rect>
+     <x>231</x>
+     <y>138</y>
+     <width>131</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Consulter</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icones/Reused Hand.png</normaloff>:/icones/Reused Hand.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="zoneListeCorrespondances">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>33</y>
+     <width>353</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="uniformItemSizes">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="etiquette">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>353</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&amp;Liste des correspondances</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="buddy">
+    <cstring>zoneListeCorrespondances</cstring>
+   </property>
+  </widget>
+  <action name="actionConsulter">
+   <property name="text">
+    <string>Consulter</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>zoneListeCorrespondances</tabstop>
+  <tabstop>boutonConsulter</tabstop>
+  <tabstop>boutonAnnuler</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>boutonAnnuler</sender>
+   <signal>clicked()</signal>
+   <receiver>fenetreNavigation</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fenetrePrincipale</class>
+ <widget class="QMainWindow" name="fenetrePrincipale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>DejaVu Serif</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dictionnaire le Littré</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ressources.qrc">
+    <normaloff>:/icones/Girls I do adore....png</normaloff>:/icones/Girls I do adore....png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="cadreGauche" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>80</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="margin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QTabWidget" name="ongletConsultationEtRecherche">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="tabPosition">
+           <enum>QTabWidget::South</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <property name="usesScrollButtons">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="pageConsultation">
+           <attribute name="title">
+            <string>Cons&amp;ultation</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>2</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="zoneTexteConsultation">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>36</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="boutonConsulter">
+              <property name="maximumSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Consulter</string>
+              </property>
+              <property name="icon">
+               <iconset resource="ressources.qrc">
+                <normaloff>:/icones/I like Ghostace Killah. He's a top notch emcee and we share the same birthday..png</normaloff>:/icones/I like Ghostace Killah. He's a top notch emcee and we share the same birthday..png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="boutonModeConsultation">
+              <property name="maximumSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+              <property name="icon">
+               <iconset resource="ressources.qrc">
+                <normaloff>:/icones/U.B.K. Eternal Sledge Hammer.png</normaloff>:/icones/U.B.K. Eternal Sledge Hammer.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="popupMode">
+               <enum>QToolButton::InstantPopup</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="pageRechercheDansArticle">
+           <attribute name="title">
+            <string>Recherche &amp;dans l'article</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>2</number>
+            </property>
+            <item>
+             <widget class="QComboBox" name="zoneTexteRechercheDansArticle">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="boutonOccurrenceSuivante">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="boutonOccurrencePrecedente">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="boutonModeRecherche">
+              <property name="minimumSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>38</width>
+                <height>38</height>
+               </size>
+              </property>
+              <property name="icon">
+               <iconset resource="ressources.qrc">
+                <normaloff>:/icones/U.B.K. Eternal Sledge Hammer.png</normaloff>:/icones/U.B.K. Eternal Sledge Hammer.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="popupMode">
+               <enum>QToolButton::InstantPopup</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="ongletPrincipal">
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="tabPosition">
+           <enum>QTabWidget::East</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>28</width>
+            <height>28</height>
+           </size>
+          </property>
+          <property name="usesScrollButtons">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="pageNomenclature">
+           <attribute name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/icones/Library.png</normaloff>:/icones/Library.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>No&amp;menclature</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="etiquetteNomenclature">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&amp;Liste de tous les articles</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="buddy">
+               <cstring>zoneListeEntrees</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTabWidget" name="ongletNomenclature">
+              <property name="tabPosition">
+               <enum>QTabWidget::South</enum>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <property name="usesScrollButtons">
+               <bool>false</bool>
+              </property>
+              <widget class="QWidget" name="pageEntrees">
+               <attribute name="title">
+                <string>En&amp;trées</string>
+               </attribute>
+               <layout class="QVBoxLayout">
+                <item>
+                 <widget class="QListView" name="zoneListeEntrees">
+                  <property name="verticalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOn</enum>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOff</enum>
+                  </property>
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <property name="uniformItemSizes">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="pageFormesFlechies">
+               <attribute name="title">
+                <string>Forme&amp;s fléchies</string>
+               </attribute>
+               <layout class="QVBoxLayout">
+                <item>
+                 <widget class="QListView" name="zoneListeFormesFlechies">
+                  <property name="verticalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOn</enum>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOff</enum>
+                  </property>
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <property name="uniformItemSizes">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="pageSurvol">
+           <attribute name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/icones/Documents Folder.png</normaloff>:/icones/Documents Folder.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Sur&amp;vol</string>
+           </attribute>
+           <layout class="QVBoxLayout">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="etiquetteSurvol">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Liste des sens de l'article</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="zoneListeSurvol">
+              <property name="verticalScrollBarPolicy">
+               <enum>Qt::ScrollBarAsNeeded</enum>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>true</bool>
+              </property>
+              <property name="uniformItemSizes">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="pageHistorique">
+           <attribute name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/icones/Scheduled Tizasks.png</normaloff>:/icones/Scheduled Tizasks.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>&amp;Historique</string>
+           </attribute>
+           <layout class="QVBoxLayout">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="etiquetteHistorique">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>24</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>&amp;Liste des articles consultés</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="buddy">
+               <cstring>zoneListeHistorique</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QListWidget" name="zoneListeHistorique">
+              <property name="statusTip">
+               <string>Cliquez pour consulter un article</string>
+              </property>
+              <property name="horizontalScrollBarPolicy">
+               <enum>Qt::ScrollBarAlwaysOff</enum>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>true</bool>
+              </property>
+              <property name="uniformItemSizes">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QFrame" name="cadreDroit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QTextBrowser" name="navigateurArticle">
+          <property name="tabChangesFocus">
+           <bool>true</bool>
+          </property>
+          <property name="openLinks">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>38</width>
+            <height>0</height>
+           </size>
+          </property>
+          <widget class="QToolButton" name="boutonAvancerHistorique">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>40</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonReculerHistorique">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonAgrandirTexte">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>120</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonReduireTexte">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>160</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonExporter">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>320</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>Exporter l'article</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonImprimer">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>360</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonCopier">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>280</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonAfficherPleinEcran">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>200</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonAfficherFlexion">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>80</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonChercherTousLesArticles">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>240</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QToolButton" name="boutonChampLecture">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>400</y>
+             <width>38</width>
+             <height>38</height>
+            </rect>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/icones/U.B.K. Eternal Sledge Hammer.png</normaloff>:/icones/U.B.K. Eternal Sledge Hammer.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="popupMode">
+            <enum>QToolButton::InstantPopup</enum>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBarre">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>&amp;Fichier</string>
+    </property>
+    <widget class="QMenu" name="menuExporter">
+     <property name="title">
+      <string>&amp;Exporter l'article</string>
+     </property>
+     <property name="icon">
+      <iconset resource="ressources.qrc">
+       <normaloff>:/icones/You take forever to say nothing..png</normaloff>:/icones/You take forever to say nothing..png</iconset>
+     </property>
+     <addaction name="actionExporterHTML"/>
+     <addaction name="actionExporterODF"/>
+     <addaction name="actionExporterPDF"/>
+     <addaction name="actionExporterTXT"/>
+    </widget>
+    <widget class="QMenu" name="menuExporterBalises">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Exporter les &amp;balises de l'article</string>
+     </property>
+     <addaction name="actionExporterBalises"/>
+    </widget>
+    <addaction name="menuExporter"/>
+    <addaction name="menuExporterBalises"/>
+    <addaction name="separator"/>
+    <addaction name="actionImprimer"/>
+    <addaction name="actionAfficherApercuImpression"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>&amp;Édition</string>
+    </property>
+    <addaction name="actionCopier"/>
+    <addaction name="actionToutSelectionner"/>
+   </widget>
+   <widget class="QMenu" name="menuNavigation">
+    <property name="title">
+     <string>&amp;Navigation</string>
+    </property>
+    <addaction name="actionAfficherFlexion"/>
+    <addaction name="separator"/>
+    <addaction name="actionReculerEntrees"/>
+    <addaction name="actionAvancerEntrees"/>
+    <addaction name="separator"/>
+    <addaction name="actionReculerHistorique"/>
+    <addaction name="actionAvancerHistorique"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>&amp;Options</string>
+    </property>
+    <widget class="QMenu" name="menuModeConsultation">
+     <property name="title">
+      <string>Préciser le mode de cons&amp;ultation</string>
+     </property>
+     <addaction name="actionNegligerAccents"/>
+     <addaction name="actionDefilerAFurEtAMesure"/>
+    </widget>
+    <widget class="QMenu" name="menuModeRecherche">
+     <property name="title">
+      <string>Préci&amp;ser le mode de recherche</string>
+     </property>
+     <addaction name="actionRespecterCasse"/>
+     <addaction name="actionEmployerExpressionRationnelle"/>
+    </widget>
+    <widget class="QMenu" name="menuChampLecture">
+     <property name="title">
+      <string>Préciser le cha&amp;mp de lecture</string>
+     </property>
+     <addaction name="actionInclurePrononciation"/>
+     <addaction name="actionInclureNature"/>
+     <addaction name="actionInclureCitations"/>
+     <addaction name="actionInclureHistorique"/>
+     <addaction name="actionInclureEtymologie"/>
+    </widget>
+    <addaction name="actionAgrandirTexte"/>
+    <addaction name="actionReduireTexte"/>
+    <addaction name="separator"/>
+    <addaction name="actionAfficherPleinEcran"/>
+    <addaction name="separator"/>
+    <addaction name="menuModeConsultation"/>
+    <addaction name="menuModeRecherche"/>
+    <addaction name="menuChampLecture"/>
+    <addaction name="separator"/>
+    <addaction name="actionChangerTypographie"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>&amp;Aide</string>
+    </property>
+    <widget class="QMenu" name="menuLireTemoignage">
+     <property name="title">
+      <string>Lire le &amp;témoignage rendu à Littré</string>
+     </property>
+     <addaction name="actionLireTemoignagePasteur"/>
+     <addaction name="actionLireTemoignageRenan"/>
+     <addaction name="actionLireTemoignageZola"/>
+    </widget>
+    <addaction name="actionLireCauserie"/>
+    <addaction name="actionLirePreface"/>
+    <addaction name="menuLireTemoignage"/>
+    <addaction name="separator"/>
+    <addaction name="actionAfficherPortrait"/>
+    <addaction name="separator"/>
+    <addaction name="actionAProposDuLogiciel"/>
+   </widget>
+   <widget class="QMenu" name="menuRecherche">
+    <property name="title">
+     <string>&amp;Recherche</string>
+    </property>
+    <widget class="QMenu" name="menuChercherArticle">
+     <property name="title">
+      <string>&amp;Chercher dans l'article</string>
+     </property>
+     <addaction name="actionOccurrenceSuivante"/>
+     <addaction name="actionOccurrencePrecedente"/>
+    </widget>
+    <addaction name="menuChercherArticle"/>
+    <addaction name="separator"/>
+    <addaction name="actionChercherTousLesArticles"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuRecherche"/>
+   <addaction name="menuNavigation"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <action name="actionConsulter">
+   <property name="text">
+    <string>Consulter</string>
+   </property>
+  </action>
+  <action name="actionImprimer">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Printer.png</normaloff>:/icones/Printer.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Imprimer l'article...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/X.png</normaloff>:/icones/X.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quitter</string>
+   </property>
+  </action>
+  <action name="actionCopier">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Documents.png</normaloff>:/icones/Documents.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copier le texte entier</string>
+   </property>
+  </action>
+  <action name="actionToutSelectionner">
+   <property name="text">
+    <string>&amp;Tout sélectionner</string>
+   </property>
+  </action>
+  <action name="actionOccurrenceSuivante">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Right Down.png</normaloff>:/icones/Right Down.png</iconset>
+   </property>
+   <property name="text">
+    <string>l'occurrence &amp;suivante</string>
+   </property>
+   <property name="toolTip">
+    <string>Chercher l'occurrence suivante</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="actionOccurrencePrecedente">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Left Up.png</normaloff>:/icones/Left Up.png</iconset>
+   </property>
+   <property name="text">
+    <string>l'occurrence &amp;précédente</string>
+   </property>
+   <property name="toolTip">
+    <string>Chercher l'occurrence précédente</string>
+   </property>
+  </action>
+  <action name="actionChercherTousLesArticles">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Golden Binoculars.png</normaloff>:/icones/Golden Binoculars.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;hercher dans tous les articles...</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actionReculerHistorique">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Previous.png</normaloff>:/icones/Previous.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rec&amp;uler dans l'historique</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Left</string>
+   </property>
+  </action>
+  <action name="actionAvancerHistorique">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Next.png</normaloff>:/icones/Next.png</iconset>
+   </property>
+   <property name="text">
+    <string>Avancer &amp;dans l'historique</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Right</string>
+   </property>
+  </action>
+  <action name="actionReculerEntrees">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Re&amp;culer dans les entrées</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+  <action name="actionAvancerEntrees">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>A&amp;vancer dans les entrées</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionAgrandirTexte">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Zoom In.png</normaloff>:/icones/Zoom In.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agrand&amp;ir le texte</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="actionReduireTexte">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Zoom Out. Machinie Gun Funk Baby!.png</normaloff>:/icones/Zoom Out. Machinie Gun Funk Baby!.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ré&amp;duire le texte</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actionAProposDuLogiciel">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Info.png</normaloff>:/icones/Info.png</iconset>
+   </property>
+   <property name="text">
+    <string>S'&amp;informer à propos du logiciel...</string>
+   </property>
+  </action>
+  <action name="actionLirePreface">
+   <property name="text">
+    <string>&amp;Lire la préface au dictionnaire</string>
+   </property>
+  </action>
+  <action name="actionAfficherPleinEcran">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Sewy.png</normaloff>:/icones/Sewy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Affic&amp;her en plein écran</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionLireCauserie">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Toy House.png</normaloff>:/icones/Toy House.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lire la &amp;causerie d'Émile Littré</string>
+   </property>
+  </action>
+  <action name="actionExporterHTML">
+   <property name="text">
+    <string>au format &amp;HTML...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExporterODF">
+   <property name="text">
+    <string>au format &amp;OpenDocument...</string>
+   </property>
+  </action>
+  <action name="actionExporterTXT">
+   <property name="text">
+    <string>au format &amp;texte simple...</string>
+   </property>
+  </action>
+  <action name="actionExporterBalises">
+   <property name="text">
+    <string>au format &amp;XML...</string>
+   </property>
+  </action>
+  <action name="actionAfficherPortrait">
+   <property name="text">
+    <string>Afficher le &amp;portrait d'Émile Littré...</string>
+   </property>
+  </action>
+  <action name="actionAfficherFlexion">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Can't forget the De La.png</normaloff>:/icones/Can't forget the De La.png</iconset>
+   </property>
+   <property name="text">
+    <string>Afficher la fle&amp;xion...</string>
+   </property>
+  </action>
+  <action name="actionNegligerAccents">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Négliger les a&amp;ccents et la cédille</string>
+   </property>
+  </action>
+  <action name="actionDefilerAFurEtAMesure">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Défi&amp;ler à fur et à mesure</string>
+   </property>
+  </action>
+  <action name="actionEmployerExpressionRationnelle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Employer une e&amp;xpression rationnelle</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="actionRespecterCasse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Respecter la casse</string>
+   </property>
+  </action>
+  <action name="actionChangerTypographie">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Pages.png</normaloff>:/icones/Pages.png</iconset>
+   </property>
+   <property name="text">
+    <string>Changer les couleurs et la t&amp;ypographie...</string>
+   </property>
+   <property name="shortcut">
+    <string>F8</string>
+   </property>
+  </action>
+  <action name="actionAfficherApercuImpression">
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Printer Script...or Pript.png</normaloff>:/icones/Printer Script...or Pript.png</iconset>
+   </property>
+   <property name="text">
+    <string>Afficher l'aperç&amp;u avant impression...</string>
+   </property>
+  </action>
+  <action name="actionExporterPDF">
+   <property name="text">
+    <string>au format &amp;PDF...</string>
+   </property>
+  </action>
+  <action name="actionInclurePrononciation">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Inclure la &amp;prononciation</string>
+   </property>
+  </action>
+  <action name="actionInclureNature">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Inclure la &amp;nature</string>
+   </property>
+  </action>
+  <action name="actionInclureCitations">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Inclure les c&amp;itations</string>
+   </property>
+   <property name="shortcut">
+    <string>F7</string>
+   </property>
+  </action>
+  <action name="actionInclureHistorique">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Inclure l'histori&amp;que</string>
+   </property>
+  </action>
+  <action name="actionInclureEtymologie">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Inclure l'é&amp;tymologie</string>
+   </property>
+  </action>
+  <action name="action_Zola_parle_d_mile_Littr">
+   <property name="text">
+    <string>&amp;Zola parle d'Émile Littré</string>
+   </property>
+  </action>
+  <action name="actionRe_nan_d_mile">
+   <property name="text">
+    <string>Re&amp;nan d'Émile</string>
+   </property>
+  </action>
+  <action name="actionLireTemoignagePasteur">
+   <property name="text">
+    <string>par Lo&amp;uis Pasteur</string>
+   </property>
+  </action>
+  <action name="actionLireTemoignageRenan">
+   <property name="text">
+    <string>par Ernest &amp;Renan</string>
+   </property>
+  </action>
+  <action name="actionLireTemoignageZola">
+   <property name="text">
+    <string>par Émile &amp;Zola</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>zoneTexteConsultation</tabstop>
+  <tabstop>boutonConsulter</tabstop>
+  <tabstop>boutonModeConsultation</tabstop>
+  <tabstop>zoneTexteRechercheDansArticle</tabstop>
+  <tabstop>boutonOccurrenceSuivante</tabstop>
+  <tabstop>boutonOccurrencePrecedente</tabstop>
+  <tabstop>boutonModeRecherche</tabstop>
+  <tabstop>navigateurArticle</tabstop>
+  <tabstop>boutonReculerHistorique</tabstop>
+  <tabstop>boutonAvancerHistorique</tabstop>
+  <tabstop>boutonAfficherFlexion</tabstop>
+  <tabstop>boutonAgrandirTexte</tabstop>
+  <tabstop>boutonReduireTexte</tabstop>
+  <tabstop>boutonAfficherPleinEcran</tabstop>
+  <tabstop>boutonChercherTousLesArticles</tabstop>
+  <tabstop>boutonCopier</tabstop>
+  <tabstop>boutonExporter</tabstop>
+  <tabstop>boutonImprimer</tabstop>
+  <tabstop>boutonChampLecture</tabstop>
+  <tabstop>ongletPrincipal</tabstop>
+  <tabstop>zoneListeFormesFlechies</tabstop>
+  <tabstop>zoneListeEntrees</tabstop>
+  <tabstop>ongletNomenclature</tabstop>
+  <tabstop>zoneListeSurvol</tabstop>
+  <tabstop>zoneListeHistorique</tabstop>
+  <tabstop>ongletConsultationEtRecherche</tabstop>
+ </tabstops>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>zoneTexteConsultation</sender>
+   <signal>returnPressed()</signal>
+   <receiver>actionConsulter</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>74</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionToutSelectionner</sender>
+   <signal>triggered()</signal>
+   <receiver>navigateurArticle</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAgrandirTexte</sender>
+   <signal>triggered()</signal>
+   <receiver>navigateurArticle</receiver>
+   <slot>zoomIn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionReduireTexte</sender>
+   <signal>triggered()</signal>
+   <receiver>navigateurArticle</receiver>
+   <slot>zoomOut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>boutonConsulter</sender>
+   <signal>clicked()</signal>
+   <receiver>actionConsulter</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fenetreRecherche</class>
+ <widget class="QDialog" name="fenetreRecherche">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>DejaVu Serif</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Chercher dans tous les articles</string>
+  </property>
+  <widget class="QLabel" name="etiquetteResultats">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>56</y>
+     <width>421</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&amp;Résultats de la recherche</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="buddy">
+    <cstring>zoneTexteRecherche</cstring>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="zoneListeResultats">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>80</y>
+     <width>421</width>
+     <height>340</height>
+    </rect>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="uniformItemSizes">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonImprimer">
+   <property name="geometry">
+    <rect>
+     <x>49</x>
+     <y>429</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Imprimer les résultats...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Printer.png</normaloff>:/icones/Printer.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonExporter">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>429</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Exporter les résultats</string>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/You take forever to say nothing..png</normaloff>:/icones/You take forever to say nothing..png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonAfficherApercuImpression">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>429</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Afficher l'aperçu avant impression...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Printer Script...or Pript.png</normaloff>:/icones/Printer Script...or Pript.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="barreProgression">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>16</y>
+     <width>421</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="boutonChercher">
+   <property name="geometry">
+    <rect>
+     <x>352</x>
+     <y>9</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Chercher</string>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Golden Binoculars.png</normaloff>:/icones/Golden Binoculars.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="boutonModeChamp">
+   <property name="geometry">
+    <rect>
+     <x>392</x>
+     <y>9</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Mode et champ</string>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/U.B.K. Eternal Sledge Hammer.png</normaloff>:/icones/U.B.K. Eternal Sledge Hammer.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="popupMode">
+    <enum>QToolButton::InstantPopup</enum>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="zoneTexteRecherche">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>10</y>
+     <width>341</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonConsulter">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>429</y>
+     <width>141</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Consulter</string>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/Reused Hand.png</normaloff>:/icones/Reused Hand.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boutonFermerOuAnnuler">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>429</y>
+     <width>121</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Fermer</string>
+   </property>
+   <property name="icon">
+    <iconset resource="ressources.qrc">
+     <normaloff>:/icones/X.png</normaloff>:/icones/X.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <zorder>boutonChercher</zorder>
+  <zorder>boutonModeChamp</zorder>
+  <zorder>zoneTexteRecherche</zorder>
+  <zorder>boutonConsulter</zorder>
+  <zorder>boutonFermerOuAnnuler</zorder>
+  <zorder>barreProgression</zorder>
+  <zorder>etiquetteResultats</zorder>
+  <zorder>zoneListeResultats</zorder>
+  <zorder>boutonImprimer</zorder>
+  <zorder>boutonExporter</zorder>
+  <zorder>boutonAfficherApercuImpression</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>zoneTexteRecherche</tabstop>
+  <tabstop>boutonChercher</tabstop>
+  <tabstop>boutonModeChamp</tabstop>
+  <tabstop>zoneListeResultats</tabstop>
+  <tabstop>boutonConsulter</tabstop>
+  <tabstop>boutonFermerOuAnnuler</tabstop>
+  <tabstop>boutonExporter</tabstop>
+  <tabstop>boutonImprimer</tabstop>
+  <tabstop>boutonAfficherApercuImpression</tabstop>
+ </tabstops>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

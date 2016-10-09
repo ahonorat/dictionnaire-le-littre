@@ -1391,7 +1391,7 @@ void classePrincipale::Exporter()
 		}
 		else {
 			QTextDocumentWriter exporteur(texteNomFichier);
-			exporteur.setFormat(listeExtensions.at(0).toAscii());
+            exporteur.setFormat(listeExtensions.at(0).toLatin1());
 			if (exporteur.write(navigateurArticle->document()) == false)
 				QMessageBox::warning(this, windowTitle(), QString::fromUtf8(
 						"Impossible d'\303\251crire le fichier ")

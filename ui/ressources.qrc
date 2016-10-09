@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/icones" >
+        <file>Documents Folder.png</file>
+        <file>Documents.png</file>
+        <file>Golden Binoculars.png</file>
+        <file>Info.png</file>
+        <file>Left Up.png</file>
+        <file>Library.png</file>
+        <file>Next.png</file>
+        <file>Previous.png</file>
+        <file>Printer.png</file>
+        <file>Right Down.png</file>
+        <file>Scheduled Tizasks.png</file>
+        <file>Sewy.png</file>
+        <file>Toy House.png</file>
+        <file>X.png</file>
+        <file>You take forever to say nothing..png</file>
+        <file>Zoom In.png</file>
+        <file>Zoom Out. Machinie Gun Funk Baby!.png</file>
+        <file>Girls I do adore....png</file>
+        <file>Can't forget the De La.png</file>
+        <file>I like Ghostace Killah. He's a top notch emcee and we share the same birthday..png</file>
+        <file>Reused Hand.png</file>
+        <file>U.B.K. Eternal Sledge Hammer.png</file>
+        <file>Printer Script...or Pript.png</file>
+        <file>Refresh.png</file>
+        <file>Pages.png</file>
+    </qresource>
+    <qresource prefix="/images" >
+        <file>Portrait d'Emile Littre.png</file>
+    </qresource>
+</RCC>

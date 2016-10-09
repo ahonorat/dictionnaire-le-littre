@@ -394,7 +394,7 @@ void classeRecherche::Exporter()
 		}
 		else {
 			QTextDocumentWriter exporteur(texteNomFichier);
-			exporteur.setFormat(listeExtensions.at(0).toAscii());
+            exporteur.setFormat(listeExtensions.at(0).toLatin1());
 			if (exporteur.write(document) == false)
 				QMessageBox::warning(this, fenetrePrincipale->windowTitle(),
 						QString::fromUtf8("Impossible d'\303\251"

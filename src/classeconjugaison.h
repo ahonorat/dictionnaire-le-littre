@@ -34,6 +34,7 @@
 #define CLASSECONJUGAISON_H
 
 #include <QDialog>
+#include <QPrinter>
 #include "ui_classeconjugaison.h"
 
 class classeConjugaison : public QDialog, public Ui::fenetreConjugaison

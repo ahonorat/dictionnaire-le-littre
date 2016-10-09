@@ -34,6 +34,7 @@
 #define CLASSESTYLE_H
 
 #include <QCleanlooksStyle>
+//#include <QCommonStyle>
 
 class classeStyle : public QCleanlooksStyle
 {

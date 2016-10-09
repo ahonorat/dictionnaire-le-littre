@@ -34,7 +34,9 @@
 #include <QTranslator>
 #include <QFontDatabase>
 
-#include "classestyle.h"
+#include <QtWidgets>
+
+//#include "classestyle.h"
 #include "classeprincipale.h"
 
 QString AjouterBarreOblique(const QString &texteChemin)
@@ -46,8 +48,8 @@ QString AjouterBarreOblique(const QString &texteChemin)
 int main(int argc, char *argv[])
 {
 	QApplication application(argc, argv);
-	application.setStyle(new classeStyle);
-
+//	application.setStyle(new classeStyle);
+    application.setStyle(QStyleFactory::create("cleanlooks"));
 
 	QFileInfo fichier("Littre.qm");
 	QString texteRepertoire(fichier.exists()

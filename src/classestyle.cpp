@@ -32,8 +32,7 @@
 
 #include "classestyle.h"
 
-classeStyle::classeStyle()
-		: QCleanlooksStyle()
+classeStyle::classeStyle() : QCleanlooksStyle()
 {
 }
 
@@ -41,5 +40,5 @@ int classeStyle::pixelMetric(PixelMetric metric, const QStyleOption *option,
 		const QWidget *widget) const
 {
 	return (metric == QStyle::PM_SmallIconSize) ? 22
-			: QCleanlooksStyle::pixelMetric(metric, option, widget);
+            : QCleanlooksStyle::pixelMetric(metric, option, widget);
 }

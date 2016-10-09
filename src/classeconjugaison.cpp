@@ -165,7 +165,7 @@ void classeConjugaison::Exporter()
 		}
 		else {
 			QTextDocumentWriter exporteur(texteNomFichier);
-			exporteur.setFormat(listeExtensions.at(0).toAscii());
+            exporteur.setFormat(listeExtensions.at(0).toLatin1());
 			if (exporteur.write(document) == false) {
 				classePrincipale *fenetrePrincipale(
 						qobject_cast<classePrincipale *>(parent()));
